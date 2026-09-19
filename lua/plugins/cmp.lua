@@ -13,6 +13,14 @@ return {
 				{ name = "nvim_lsp" },
 			},
 
+			window = {
+			    completion = cmp.config.window.bordered({
+					border = "rounded",
+				}),
+				documentation = cmp.config.window.bordered({
+					border = "rounded",
+				}),
+			},
 			mapping = cmp.mapping.preset.insert({
 				["<C-Space>"] = cmp.mapping.complete(),
 				["<CR>"] = cmp.mapping.confirm({ select = false }),

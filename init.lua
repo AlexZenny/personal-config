@@ -97,6 +97,25 @@ vim.api.nvim_set_hl(0, "Pmenu", { fg = "#FAF2EB", bg = "#282727", }) -- Popup me
 vim.api.nvim_set_hl(0, "PmenuSel", { fg = "#FAF2EB", bg = "#383735", }) -- Selected popup item
 vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#575350", bg = "#161415", }) -- Window separator
 
+-- Floating window
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#282727", })
+vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#575350", })
+
+-- CMP
+vim.api.nvim_set_hl(0, "CmpItemAbbr", { fg = "#FAF2EB", }) -- Normal text
+vim.api.nvim_set_hl(0, "CmpItemKind", { fg = "#FAF2EB", }) -- General
+vim.api.nvim_set_hl(0, "CmpItemKindText", { fg = "#FAF2EB", }) -- Text
+vim.api.nvim_set_hl(0, "CmpItemKindMethod", { fg = "#FFF7C2", }) -- Method
+vim.api.nvim_set_hl(0, "CmpItemKindFunction", { fg = "#C2FFF7", }) -- Function
+vim.api.nvim_set_hl(0, "CmpItemKindVariable", { fg = "#4FC2EC", }) -- Variable
+vim.api.nvim_set_hl(0, "CmpItemKindClass", { fg = "#DE2F7D", }) -- Class
+vim.api.nvim_set_hl(0, "CmpItemKindValue", { fg = "#E25E70", }) -- Value
+vim.api.nvim_set_hl(0, "CmpItemKindEnum", { fg = "#45BF6E", }) -- Enum 
+vim.api.nvim_set_hl(0, "CmpItemKindEnumMember", { fg = "#85CC96", }) -- Enum member
+vim.api.nvim_set_hl(0, "CmpItemKindKeyword", { fg = "#FFCA45", }) -- Keyword
+vim.api.nvim_set_hl(0, "CmpItemKindConstant", { fg = "#8093DA", }) -- Constant 
+vim.api.nvim_set_hl(0, "CmpItemMenu", { fg = "#FAF2EB", }) -- Menu
+
 -- Neotree
 vim.api.nvim_set_hl(0, "NeoTreeDirectoryIcon", { fg = "#87AFD7", }) -- Directory icon --
 vim.api.nvim_set_hl(0, "NeoTreeDirectoryName", { fg = "#87AFD7", }) -- Directory name --
