@@ -27,7 +27,7 @@ return {
 		vim.api.nvim_set_hl(0, "@comment.documentation.lua", {link = "comm"})
 
 	-- Preprocessing --
-	vim.api.nvim_set_hl(0, "pre_dir", {fg = "#D273EC"})
+	vim.api.nvim_set_hl(0, "pre_dir", {fg = "#D273EC", bold = false})
 		vim.api.nvim_set_hl(0, "@keyword.import.c", {link = "pre_dir"})
 		vim.api.nvim_set_hl(0, "@keyword.import.cpp", {link = "pre_dir"})
 		vim.api.nvim_set_hl(0, "@keyword.import.python", {link = "pre_dir"})
@@ -64,19 +64,20 @@ return {
 		vim.api.nvim_set_hl(0, "@type.builtin.c", {link = "d_type"})
 		vim.api.nvim_set_hl(0, "@type.builtin.cpp", {link = "d_type"})
 		vim.api.nvim_set_hl(0, "@type.builtin.python", {link = "d_type"})
-		vim.api.nvim_set_hl(0, "@type.python", {link = "d_type"})
 		vim.api.nvim_set_hl(0, "@lsp.type.type.c", {link = "d_type"})
 		vim.api.nvim_set_hl(0, "@lsp.type.type.cpp", {link = "d_type"})
 		vim.api.nvim_set_hl(0, "@keyword.modifier.c", {link = "d_type"})
 		vim.api.nvim_set_hl(0, "@keyword.modifier.cpp", {link = "d_type"})
 		vim.api.nvim_set_hl(0, "@keyword.type.c", {link = "d_type"})
 		vim.api.nvim_set_hl(0, "@keyword.type.cpp", {link = "d_type"})
+		vim.api.nvim_set_hl(0, "@keyword.type.python", {link = "d_type"})
 		vim.api.nvim_set_hl(0, "@keyword.function.python", {link = "d_type"})
 
 	-- Custom types --
 	vim.api.nvim_set_hl(0, "c_type", {fg = "#DE2F7D", bold = true,})
 		vim.api.nvim_set_hl(0, "@type.c", {link = "c_type"})
 		vim.api.nvim_set_hl(0, "@type.cpp", {link = "c_type"})
+		vim.api.nvim_set_hl(0, "@type.python", {link = "c_type"})
 		vim.api.nvim_set_hl(0, "@lsp.type.class.c", {link = "c_type"})
 		vim.api.nvim_set_hl(0, "@lsp.type.class.cpp", {link = "c_type"})
 		vim.api.nvim_set_hl(0, "@type.definition.c", {link = "c_type"})
