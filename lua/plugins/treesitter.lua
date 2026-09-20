@@ -33,6 +33,7 @@ return {
 		vim.api.nvim_set_hl(0, "@keyword.import.python", {link = "pre_dir"})
 		vim.api.nvim_set_hl(0, "@keyword.directive.c", {link = "pre_dir"})
 		vim.api.nvim_set_hl(0, "@keyword.directive.cpp", {link = "pre_dir"})
+		vim.api.nvim_set_hl(0, "@keyword.directive.python", {link = "pre_dir"})
 		vim.api.nvim_set_hl(0, "@keyword.directive.define.c", {link = "pre_dir"})
 		vim.api.nvim_set_hl(0, "@keyword.directive.define.cpp", {link = "pre_dir"})
 
