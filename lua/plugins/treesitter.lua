@@ -30,6 +30,7 @@ return {
 	vim.api.nvim_set_hl(0, "pre_dir", {fg = "#D273EC"})
 		vim.api.nvim_set_hl(0, "@keyword.import.c", {link = "pre_dir"})
 		vim.api.nvim_set_hl(0, "@keyword.import.cpp", {link = "pre_dir"})
+		vim.api.nvim_set_hl(0, "@keyword.import.python", {link = "pre_dir"})
 		vim.api.nvim_set_hl(0, "@keyword.directive.c", {link = "pre_dir"})
 		vim.api.nvim_set_hl(0, "@keyword.directive.cpp", {link = "pre_dir"})
 		vim.api.nvim_set_hl(0, "@keyword.directive.define.c", {link = "pre_dir"})
@@ -170,6 +171,7 @@ return {
 		vim.api.nvim_set_hl(0, "@keyword.operator.cpp", {link = "spec_key"})
 		vim.api.nvim_set_hl(0, "@punctuation.special.c", {link = "spec_key"})
 		vim.api.nvim_set_hl(0, "@punctuation.special.cpp", {link = "spec_key"})
+		vim.api.nvim_set_hl(0, "@module.python", {link = "spec_key"})
 
 	-- Enumerations --
 	vim.api.nvim_set_hl(0, "enum", {fg = "#45BF6E", bold = true})
