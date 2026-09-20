@@ -15,7 +15,7 @@ return {
 			end,
 		})
 
--- C/C++ syntax highlights --
+-- C/C++/Python/Lua syntax highlights --
 
 	-- Comments --
 	vim.api.nvim_set_hl(0, "comm", {fg = "#6C6C6C"})
@@ -106,7 +106,6 @@ return {
 		vim.api.nvim_set_hl(0, "@lsp.type.function.c", {link = "func"})
 		vim.api.nvim_set_hl(0, "@lsp.type.function.cpp", {link = "func"})
 		vim.api.nvim_set_hl(0, "@function.lua", {link = "func"})
-		vim.api.nvim_set_hl(0, "@function.python", {link = "func"})
 
 	-- Functions (built-in) --
 	vim.api.nvim_set_hl(0, "func_bi", {fg = "#E3C2FF", bold = true})
@@ -147,12 +146,17 @@ return {
 		vim.api.nvim_set_hl(0, "@constructor.lua", {link = "var"})
 		vim.api.nvim_set_hl(0, "@punctuation.delimiter.lua", {link = "var"})
 
+	-- Function declaration --
+	vim.api.nvim_set_hl(0, "f_dec", {fg = "#FFFFFF", bold = true})
+		vim.api.nvim_set_hl(0, "@function.python", {link = "f_dec"})
+
 	-- Constants --
 	vim.api.nvim_set_hl(0, "const", {fg = "#CCA885"})
 		vim.api.nvim_set_hl(0, "@constant.c", {link = "const"})
 		vim.api.nvim_set_hl(0, "@constant.cpp", {link = "const"})
 		vim.api.nvim_set_hl(0, "@constant.builtin.c", {link = "const"})
 		vim.api.nvim_set_hl(0, "@constant.builtin.cpp", {link = "const"})
+		vim.api.nvim_set_hl(0, "@constant.builtin.python", {link = "const"})
 
 	-- Special characters --
 	vim.api.nvim_set_hl(0, "spec_char", {fg = "#F49F3F"})
