@@ -36,6 +36,8 @@ return {
 		vim.api.nvim_set_hl(0, "@keyword.directive.python", {link = "pre_dir"})
 		vim.api.nvim_set_hl(0, "@keyword.directive.define.c", {link = "pre_dir"})
 		vim.api.nvim_set_hl(0, "@keyword.directive.define.cpp", {link = "pre_dir"})
+		vim.api.nvim_set_hl(0, "@attribute.python", {link = "pre_dir"})
+		vim.api.nvim_set_hl(0, "@attribute.builtin.python", {link = "pre_dir"})
 
 	-- Values --
 	vim.api.nvim_set_hl(0, "val", {fg = "#E25E70"})
@@ -43,6 +45,7 @@ return {
 		vim.api.nvim_set_hl(0, "@number.cpp", {link = "val"})
 		vim.api.nvim_set_hl(0, "@number.lua", {link = "val"})
 		vim.api.nvim_set_hl(0, "@number.python", {link = "val"})
+		vim.api.nvim_set_hl(0, "@number.float.python", {link = "val"})
 		vim.api.nvim_set_hl(0, "@character.c", {link = "val"})
 		vim.api.nvim_set_hl(0, "@character.cpp", {link = "val"})
 		vim.api.nvim_set_hl(0, "@character.python", {link = "val"})
@@ -82,6 +85,7 @@ return {
 		vim.api.nvim_set_hl(0, "@lsp.type.class.cpp", {link = "c_type"})
 		vim.api.nvim_set_hl(0, "@type.definition.c", {link = "c_type"})
 		vim.api.nvim_set_hl(0, "@type.definition.cpp", {link = "c_type"})
+		-- vim.api.nvim_set_hl(0, "@constructor.python", {link = "c_type"})
 
 	-- Keywords --
 	vim.api.nvim_set_hl(0, "k_word", {fg = "#FFCA45", bold = true})
@@ -101,7 +105,7 @@ return {
 		vim.api.nvim_set_hl(0, "@keyword.operator.python", {link = "k_word"})
 
 	-- Functions --
-	vim.api.nvim_set_hl(0, "func", {fg = "#C2FFF7", bold = true})
+	vim.api.nvim_set_hl(0, "func", {fg = "#DE97B7", bold = true})
 		vim.api.nvim_set_hl(0, "@function.call.c", {link = "func"})
 		vim.api.nvim_set_hl(0, "@function.call.cpp", {link = "func"})
 		vim.api.nvim_set_hl(0, "@function.call.lua", {link = "func"})
@@ -111,9 +115,10 @@ return {
 		vim.api.nvim_set_hl(0, "@function.lua", {link = "func"})
 
 	-- Functions (built-in) --
-	vim.api.nvim_set_hl(0, "func_bi", {fg = "#E3C2FF", bold = true})
+	vim.api.nvim_set_hl(0, "func_bi", {fg = "#C2FFF7", bold = true})
 		vim.api.nvim_set_hl(0, "@function.builtin.lua", {link = "func_bi"})
 		vim.api.nvim_set_hl(0, "@function.builtin.python", {link = "func_bi"})
+		vim.api.nvim_set_hl(0, "@constructor.python", {link = "func_bi"})
 
 	-- Methods --
 	vim.api.nvim_set_hl(0, "method", {fg = "#FFF7C2"})
@@ -152,6 +157,7 @@ return {
 	-- Function declaration --
 	vim.api.nvim_set_hl(0, "f_dec", {fg = "#FFFFFF", bold = true})
 		vim.api.nvim_set_hl(0, "@function.python", {link = "f_dec"})
+		vim.api.nvim_set_hl(0, "@function.method.python", {link = "f_dec"})
 
 	-- Constants --
 	vim.api.nvim_set_hl(0, "const", {fg = "#CCA885"})
@@ -160,6 +166,7 @@ return {
 		vim.api.nvim_set_hl(0, "@constant.builtin.c", {link = "const"})
 		vim.api.nvim_set_hl(0, "@constant.builtin.cpp", {link = "const"})
 		vim.api.nvim_set_hl(0, "@constant.builtin.python", {link = "const"})
+		vim.api.nvim_set_hl(0, "@variable.builtin.python", {link = "const"})
 
 	-- Special characters --
 	vim.api.nvim_set_hl(0, "spec_char", {fg = "#F49F3F"})
