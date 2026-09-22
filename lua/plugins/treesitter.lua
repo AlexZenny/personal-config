@@ -149,6 +149,7 @@ return {
 		vim.api.nvim_set_hl(0, "@punctuation.bracket.cpp", {link = "var"})
 		vim.api.nvim_set_hl(0, "@punctuation.bracket.lua", {link = "var"})
 		vim.api.nvim_set_hl(0, "@punctuation.bracket.python", {link = "var"})
+		vim.api.nvim_set_hl(0, "@punctuation.special.python", {link = "var"})
 		vim.api.nvim_set_hl(0, "@function.c", {link = "var"})
 		vim.api.nvim_set_hl(0, "@function.cpp", {link = "var"})
 		vim.api.nvim_set_hl(0, "@constructor.lua", {link = "var"})
