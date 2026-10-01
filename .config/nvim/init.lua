@@ -1,4 +1,4 @@
--- Requirements ----------------------------------------------------testtestest
+-- Requirements ----------------------------------------------------
 local platform = require("config.platform")
 require("config.lazy")
 require("config.keymaps")
