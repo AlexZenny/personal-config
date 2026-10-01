@@ -1,3 +1,10 @@
+########## Source files ##########
+source ~/.config/platform.zsh
+source $ZSH/oh-my-zsh.sh
+
+
+
+########## Global variables ##########
 export NVIM_ENV="wsl"
 export ZSH="$HOME/.oh-my-zsh"
 export COLORTERM=truecolor
@@ -6,24 +13,49 @@ export LS_COLORS="${LS_COLORS}:di=1;38;5;110"
 export USER="azieniuk"
 export MAIL="azieniuk@student.42warsaw.pl"
 export EDITOR=nvim
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-alias nvim='~/appimages/nvim-linux-x86_64.appimage'
-alias n='nvim'
-alias zsrc='source ~/.zshrc'
-alias zcfg='nvim ~/.zshrc'
-alias ncfg='cd ~/.config/nvim'
-alias ft='cd ~/42warsaw/local'
-alias fth='cd ~/42warsaw/home_git'
-alias wcc='cc -Wall -Wextra -Werror'
-alias nrm='norminette'
+
+
+########## Platform-specific aliases ##########
+case "$CUR_PLAT" in
+    YOGA)
+		alias cfg_sync_push='/home/alexzenny/Programming/misc/cfg_sync.sh push'
+		alias cfg_sync_pull='/home/alexzenny/Programming/misc/cfg_sync.sh pull'
+		alias n='nvim .'
+		alias ft='cd ~/Programming/42_common_core'
+        ;;
+    MAIN_WSL)
+		alias ft='cd ~/42warsaw/local'
+		alias fth='cd ~/42warsaw/home_git'
+        ;;
+    FT)
+        alias foo="command-for-42"
+        ;;
+    *)
+        echo "Error! Unknown platform: $CUR_PLAT"
+        ;;
+esac
+
+########## Common aliases ##########
+alias gitfastsync='git add . && git commit -m "git fast sync" && git push && git status'
 alias vall='valgrind --leak-check=full --show-leak-kinds=all -s'
+alias wcc='cc -Wall -Wextra -Werror'
+alias n='nvim'
+alias ncfg='cd ~/.config/nvim'
+alias zsrc='source ~/.zshrc'
+alias zcfg='n ~/.zshrc'
+alias nrm='norminette'
 alias py='python3'
 alias f8='flake8'
-alias gitfastsync='git add . && git commit -m "git fast sync" && git push && git status'
+
+
 
 ZSH_THEME="robbyrussell"
 plugins=(git)
-source $ZSH/oh-my-zsh.sh
+
 
 cd_hook() {
     if [[ "$PWD" != "$LAST_PWD" ]]; then
@@ -85,7 +117,3 @@ gradient_userhost() {
 }
 
 PROMPT='$(gradient_userhost): '
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
