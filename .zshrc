@@ -7,6 +7,7 @@ export USER="azieniuk"
 export MAIL="azieniuk@student.42warsaw.pl"
 export EDITOR=nvim
 
+alias=testteateasarsda
 alias nvim='~/appimages/nvim-linux-x86_64.appimage'
 alias n='nvim'
 alias zsrc='source ~/.zshrc'
