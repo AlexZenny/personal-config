@@ -1,12 +1,13 @@
 local M = {}
 
-M.name = vim.env.NVIM_ENV or "unknown"
+M.name = vim.env.CUR_PLAT or "unknown"
+M.scheme = vim.env.CUR_SCHEME or "unknown"
 
-M.toggleterm_size = { wsl = 90, multipass = 70, ft = 90, }
-M.neotree_size = { wsl = 36, multipass = 30, ft = 36, }
+M.toggleterm_size = { WSL = 90, YOGA = 70, FT = 90, }
+M.neotree_size = { WSL = 36, YOGA = 30, FT = 36, }
 
 M.clipboard = {
-    wsl = {
+    WSL = {
         name = "WslClipboard",
         copy = {
             ["+"] = "clip.exe",
@@ -19,11 +20,7 @@ M.clipboard = {
         cache_enabled = 0,
     },
 
-    multipass = {
-        -- TODO: macOS host ↔ Ubuntu VM clipboard
-    },
-
-    ft = {
+    FT = {
         -- Native Ubuntu clipboard
     },
 }

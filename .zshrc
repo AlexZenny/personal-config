@@ -24,10 +24,10 @@ case "$CUR_PLAT" in
     YOGA)
 		alias cfg_sync_push='/home/alexzenny/Programming/misc/cfg_sync.sh push'
 		alias cfg_sync_pull='/home/alexzenny/Programming/misc/cfg_sync.sh pull'
-		alias n='nvim .'
+		alias n='/home/alexzenny/Programs/Neovim/nvim-linux-x86_64.appimage'
 		alias ft='cd ~/Programming/42_common_core'
         ;;
-    MAIN_WSL)
+    WSL)
 		alias ft='cd ~/42warsaw/local'
 		alias fth='cd ~/42warsaw/home_git'
         ;;
@@ -43,7 +43,6 @@ esac
 alias gitfastsync='git add . && git commit -m "git fast sync" && git push && git status'
 alias vall='valgrind --leak-check=full --show-leak-kinds=all -s'
 alias wcc='cc -Wall -Wextra -Werror'
-alias n='nvim'
 alias ncfg='cd ~/.config/nvim'
 alias zsrc='source ~/.zshrc'
 alias zcfg='n ~/.zshrc'
