@@ -37,6 +37,9 @@ case "$CUR_PLAT" in
     WSL)
 		alias ft='cd ~/42warsaw/local'
 		alias fth='cd ~/42warsaw/home_git'
+		alias n='/home/alexzenny-pc/appimages/nvim-linux-x86_64.appimage'
+		alias cfg_sync_push='/home/alexzenny-pc/misc/cfg_sync.sh push'
+		alias cfg_sync_pull='/home/alexzenny-pc/misc/cfg_sync.sh pull'
 		#Prompt highlight
 		r1=150 g1=107 b1=157 #Left
 		r2=201 g2=134 b2=134 #Middle
