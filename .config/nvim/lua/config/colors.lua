@@ -43,7 +43,7 @@ hl(0, "Folded", {
     bg = ({ MAIN = "#1C1A1B", OLED = "#1C1A1B" })[s], }) -- Folded text
 hl(0, "Pmenu", {
     fg = ({ MAIN = "#FAF2EB", OLED = "#FFFFFF" })[s],
-    bg = ({ MAIN = "#282727", OLED = "#282727" })[s], }) -- Popup menu
+    bg = ({ MAIN = "#282727", OLED = "#000000" })[s], }) -- Popup menu
 hl(0, "PmenuSel", {
     fg = ({ MAIN = "#FAF2EB", OLED = "#FFFFFF" })[s],
     bg = ({ MAIN = "#383735", OLED = "#383735" })[s], }) -- Selected popup item
@@ -53,13 +53,13 @@ hl(0, "WinSeparator", {
 -------------------------------------------------------------------------------
 
 
------ Core floating window ----------------------------------------------------
+----- Core floating windows ----------------------------------------------------
 hl(0, "NormalFloat", {
     fg = ({ MAIN = "#FAF2EB", OLED = "#FFFFFF" })[s],
     bg = ({ MAIN = "#282727", OLED = "#282727" })[s], }) -- Floating window
 hl(0, "FloatBorder", {
-    fg = ({ MAIN = "#575350", OLED = "#575350" })[s],
-    bg = ({ MAIN = "#282727", OLED = "#282727" })[s], }) -- Floating border
+    fg = ({ MAIN = "#575350", OLED = "#252525" })[s],
+    bg = ({ MAIN = "#282727", OLED = "#000000" })[s], }) -- Floating border
 -------------------------------------------------------------------------------
 
 
