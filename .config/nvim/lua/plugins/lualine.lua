@@ -10,7 +10,7 @@ return {
 		local my_theme = {
 			normal = {
 				a = { fg = c.ll_bg, bg = c.cursor, gui = "bold" },
-				b = { fg = c.ll_bg, bg = c.constant },
+				b = { fg = c.ll_bg, bg = c.comment },
 				c = { fg = c.normal_text, bg = c.ll_bg },
 			},
             insert = {
