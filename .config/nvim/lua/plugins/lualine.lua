@@ -2,8 +2,19 @@ local c = require("config.colors")
 
 return {
 	"nvim-lualine/lualine.nvim",
+	lazy = false,
 	dependencies = {
 		"nvim-tree/nvim-web-devicons",
+	},
+
+	keys = {
+		{
+			"<C-m>",
+			function()
+				vim.o.laststatus = vim.o.laststatus == 0 and 3 or 0
+			end,
+			desc = "Toggle Lualine",
+		},
 	},
 
 	config = function()
