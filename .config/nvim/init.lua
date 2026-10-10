@@ -1,3 +1,19 @@
+-- Misc -------------------------------------------------------------
+vim.opt.termguicolors = true 
+vim.opt.number = true
+vim.opt.relativenumber = false
+vim.opt.fillchars:append({eob = " ",})
+vim.cmd("highlight Normal guibg=NONE")
+vim.cmd("highlight NormalNC guibg=NONE")
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
+vim.keymap.set("c", "q", function()
+    return "qa"
+end, { expr = true })
+---------------------------------------------------------------------
+
+
 -- Requirements ----------------------------------------------------
 local p = require("config.platform")
 require("config.colors")
@@ -70,18 +86,4 @@ vim.opt.clipboard = ""
 vim.keymap.set("v", "<C-c>", '"+y')
 vim.keymap.set("n", "<C-v>", '"+p')
 vim.keymap.set("i", "<C-v>", '<C-r>+')
----------------------------------------------------------------------
-
-
--- Misc -------------------------------------------------------------
-vim.opt.termguicolors = true 
-vim.opt.number = true
-vim.opt.relativenumber = false
-vim.opt.fillchars:append({eob = " ",})
-vim.cmd("highlight Normal guibg=NONE")
-vim.cmd("highlight NormalNC guibg=NONE")
-
-vim.keymap.set("c", "q", function()
-    return "qa"
-end, { expr = true })
 ---------------------------------------------------------------------

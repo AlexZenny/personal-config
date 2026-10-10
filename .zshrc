@@ -65,6 +65,7 @@ alias zsrc='source ~/.zshrc'
 alias zcfg='n ~/.zshrc'
 alias nrm='norminette'
 alias py='python3'
+alias pydb='python3 -m pdb'
 alias f8='flake8'
 ###############################################################
 
