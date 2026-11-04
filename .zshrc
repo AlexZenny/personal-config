@@ -28,6 +28,7 @@ case "$CUR_PLAT" in
 		alias cfg_sync_pull='/home/alexzenny/Programming/misc/cfg_sync.sh pull'
 		alias n='/home/alexzenny/Programs/Neovim/nvim-linux-x86_64.appimage'
 		alias ft='cd ~/Programming/42_common_core'
+		alias box='cd /home/alexzenny/GameDev/godot_projects/the_box'
 		#Prompt highlight
 		r1=56 g1=219 b1=229 #Left
 		r2=58 g2=142 b2=118 #Middle
@@ -67,6 +68,7 @@ alias nrm='norminette'
 alias py='python3'
 alias pydb='python3 -m pdb'
 alias f8='flake8'
+alias mps='mypy --strict'
 ###############################################################
 
 

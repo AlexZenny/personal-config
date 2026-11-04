@@ -7,12 +7,14 @@ local M = {}
 ----- Color variables ---------------------------------------------------------
 M.cursor = "#EDA356"
 M.comment = "#6C6C6C"
+M.region = "#CCB885"
 M.preprocess = "#D273EC"
 M.value = "#E25E70"
 M.constant = "#CCA885"
 M.char_spec = "#F49F3F"
-M.types_def = "#4FC2EC"
 M.types_cus = "#DE2F7D"
+M.types_def = "#4FC2EC"
+M.types_builtin = "#31DAD0"
 M.keyword = "#FFCA45"
 M.keyword_spec = "#8093DA"
 M.func_cus = "#DE97B7"
@@ -22,6 +24,37 @@ M.normal_text = "#FFFFFF"
 M.enum = "#45BF6E"
 M.enum_memb = "#85CC96"
 M.ll_bg = ({ MAIN = "#282727", OLED = "#121212" })[s]
+-------------------------------------------------------------------------------
+
+
+-- GDScript syntax tokens -----------------------------------------------------
+hl(0, "@comment.gdscript", { fg = "#6C6C6C" })
+hl(0, "@dgscriptComment", { fg = "#6C6C6C" })
+hl(0, "@function.gdscript", { fg = "#FFFFFF" })
+hl(0, "@property.gdscript", { fg = "#FFFFFF" })
+hl(0, "@attribute.gdscript", { fg = "#D273EC" })
+hl(0, "@string.gdscript", { fg = "#E25E70" })
+hl(0, "@number.float.gdscript", { fg = "#E25E70" })
+hl(0, "@number.gdscript", { fg = "#E25E70" })
+hl(0, "@boolean.gdscript", { fg = "#E25E70" })
+hl(0, "@variable.builtin.gdscript", { fg = "#CCA885" })
+hl(0, "@character.special.gdscript", { fg = "#F49F3F" })
+hl(0, "@keyword.gdscript", { fg = "#FFCA45", bold = true })
+hl(0, "@keyword.function.gdscript", { fg = "#FFCA45", bold = true })
+hl(0, "@keyword.conditional.gdscript", { fg = "#FFCA45", bold = true })
+hl(0, "@keyword.return.gdscript", { fg = "#FFCA45", bold = true })
+hl(0, "@keyword.operator.gdscript", { fg = "#FFCA45", bold = true })
+hl(0, "@keyword.repeat.gdscript", { fg = "#FFCA45", bold = true })
+hl(0, "@keyword.coroutine.gdscript", { fg = "#FFCA45", bold = true })
+hl(0, "@type.builtin.gdscript", { fg = "#4FC2EC", bold = true })
+hl(0, "@keyword.modifier.gdscript", { fg = "#4FC2EC", bold = true })
+hl(0, "@string.special.url.gdscript", { fg = "#8093DA", underline = true })
+hl(0, "@type.gdscript", { fg = "#DE2F7D", bold = true })
+hl(0, "@function.call.gdscript", { fg = "#DE97B7" })
+hl(0, "@function.builtin.gdscript", { fg = "#C2FFF7" })
+hl(0, "@constructor.gdscript", { fg = "#C2FFF7" })
+hl(0, "@function.method.call.gdscript", { fg = "#FFF7C2" })
+hl(0, "@keyword.type.gdscript", { fg = "#45BF6E", bold = true})
 -------------------------------------------------------------------------------
 
 
@@ -198,7 +231,7 @@ hl(0, "BufferTabpagesSep", {
 -------------------------------------------------------------------------------
 
 
------ C/C++/Python/Lua syntax highlights --------------------------------------
+----- C/C++/Python/Lua/GDScript syntax highlights --------------------------------------
 
 -- Comments --
 hl(0, "@comment.c", { fg = M.comment })
@@ -263,6 +296,9 @@ hl(0, "@lsp.type.class.c", { fg = M.types_cus, bold = true })
 hl(0, "@lsp.type.class.cpp", { fg = M.types_cus, bold = true })
 hl(0, "@type.definition.c", { fg = M.types_cus, bold = true })
 hl(0, "@type.definition.cpp", { fg = M.types_cus, bold = true })
+
+-- Built-in types --
+hl(0, "@constant.builtin.gdscript", { fg = M.types_builtin, bold = true })
 
 -- Keywords --
 hl(0, "@keyword.repeat.c", { fg = M.keyword, bold = true })
@@ -338,7 +374,6 @@ hl(0, "@constant.cpp", { fg = M.constant })
 hl(0, "@constant.builtin.c", { fg = M.constant })
 hl(0, "@constant.builtin.cpp", { fg = M.constant })
 hl(0, "@constant.builtin.python", { fg = M.constant })
-hl(0, "@variable.builtin.python", { fg = M.constant })
 
 -- Special characters --
 hl(0, "@string.escape.c", { fg = M.char_spec })
