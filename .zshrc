@@ -48,7 +48,15 @@ case "$CUR_PLAT" in
 		rbg=38 gbg=36 bbg=36 #Background
         ;;
     FT)
-        alias foo="command-for-42"
+		alias ft='cd ~/42/42_common_core'
+		alias n='~/42/programs/nvim-linux-x86_64.appimage'
+		alias cfg_sync_push='~/42/misc/cfg_sync.sh push'
+		alias cfg_sync_pull='~/42/misc/cfg_sync.sh pull'
+		#Prompt highlight
+		r1=150 g1=107 b1=157 #Left
+		r2=201 g2=134 b2=134 #Middle
+		r3=242 g3=184 b3=128 #Right
+		rbg=38 gbg=36 bbg=36 #Background
         ;;
     *)
         echo "Error! Unknown platform: $CUR_PLAT"
