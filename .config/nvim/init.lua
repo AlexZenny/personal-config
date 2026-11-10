@@ -71,6 +71,15 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
 vim.opt.smarttab = true
+
+-- Preview white space chars
+vim.opt.list = false
+vim.opt.listchars = {
+    tab = "··",
+    space = "·",
+    trail = "·",
+    nbsp = "␣",
+}
 ---------------------------------------------------------------------
 
 
