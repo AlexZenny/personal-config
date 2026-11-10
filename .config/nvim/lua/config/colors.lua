@@ -50,7 +50,6 @@ hl(0, "@keyword.coroutine.gdscript", { fg = "#FFCA45" })
 hl(0, "@string.special.url.gdscript", { fg = "#8093DA", underline = true })
 hl(0, "@type.builtin.gdscript", { fg = "#4FC2EC" })
 hl(0, "@keyword.modifier.gdscript", { fg = "#4FC2EC" })
-hl(0, "@variable.builtin.python", { fg = "#31DAD0" })
 hl(0, "@type.gdscript", { fg = "#DE2F7D" })
 hl(0, "@keyword.type.gdscript", { fg = "#DE2F7D" })
 hl(0, "@function.call.gdscript", { fg = "#DE97B7" })
@@ -58,6 +57,11 @@ hl(0, "@function.builtin.gdscript", { fg = "#C2FFF7" })
 hl(0, "@constructor.gdscript", { fg = "#C2FFF7" })
 hl(0, "@function.method.call.gdscript", { fg = "#FFF7C2" })
 hl(0, "Statement", { bold = false })
+-------------------------------------------------------------------------------
+
+
+----- Python syntax tokens ----------------------------------------------------
+hl(0, "@variable.builtin.python", { fg = "#31DAD0" })
 -------------------------------------------------------------------------------
 
 
