@@ -29,6 +29,7 @@ case "$CUR_PLAT" in
 		alias n='/home/alexzenny/Programs/Neovim/nvim-linux-x86_64.appimage'
 		alias ft='cd ~/Programming/42_common_core'
 		alias box='cd /home/alexzenny/GameDev/godot_projects/the_box'
+		alias elem='cd /home/alexzenny/GameDev/godot_projects/elemental'
 		#Prompt highlight
 		r1=56 g1=219 b1=229 #Left
 		r2=58 g2=142 b2=118 #Middle
